@@ -1,21 +1,34 @@
+# Animated Space Portfolio
 
-<a href="https://youtu.be/moRqo158NGc?si=DAIbiOkKnHknEQVJ" target="_blank">
-  <img src="thumbnail.png" alt="Thumbnail"/>
-</a>
+A modern, animated portfolio website featuring a space-themed design with smooth animations, a skills slider, and responsive layout.
 
+## Features
 
----
-## Introduction: 
+- **Space-Themed Design**: Featuring animated black hole and galaxy background videos
+- **Skills Slider**: Animated carousel showcasing technical skills with devicon integration
+- **Project Showcase**: Video-based project cards with hover effects
+- **Responsive Layout**: Optimized for desktop and mobile viewing
+- **Smooth Animations**: Powered by AOS (Animate On Scroll) library
 
-#### 🎥 Create the Ultimate Portfolio Website with Just HTML,CSS and JavaSctipt! 💻
+## Tech Stack
 
-#### Want to design a stunning portfolio website that’s responsive, modern, and minimalist? In this step-by-step tutorial, we’ll use only HTML and CSS to craft a visually appealing site that highlights your skills, projects, and creativity. 🌟
+- HTML5
+- CSS3 (Flexbox, Grid, CSS Animations)
+- JavaScript
+- [AOS Library](https://michalsnik.github.io/aos/)
+- [Boxicons](https://boxicons.com/)
+- [Devicons](https://devicon.dev/)
 
-#### From building the perfect navbar and styling a sleek header to creating a gallery for your work and adding smooth animations and hover effects, this video covers it all! Whether you’re a beginner or looking to sharpen your design skills, we’ll help you master flexbox, grid, and media queries for a truly responsive layout.
+## Getting Started
 
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Customize content in `index.html` and styles in `style.css`
 
----
-## Watch the full tutorial on YouTub
-<a href="https://youtu.be/moRqo158NGc?si=DAIbiOkKnHknEQVJ">
-  <img src="youtube.png" alt="youtube"/>
-</a>
+## Credits
+
+Inspired by [MiladiCode's Animated Portfolio](https://github.com/MiladiCode/Animated-Portfolio) - check out the original tutorial for a great walkthrough on building animated portfolio websites.
+
+## License
+
+MIT License
