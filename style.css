@@ -92,6 +92,11 @@ header ul a:hover{
     text-shadow: 0 0 15px black;
 }
 
+header ul a.active-nav{
+    color: #72a1de;
+    text-shadow: 0 0 10px #72a1de63;
+}
+
 header .box-icons{
     display: flex;
     position: absolute;
@@ -766,6 +771,36 @@ header .box-icons{
 }
 
 
+/* RESUME SECTION */
+.resume-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 20px 40px;
+    box-sizing: border-box;
+}
+
+.resume-embed {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #72a1de63;
+    box-shadow: 0 0 15px #72a1de42;
+    padding: 20px;
+    width: 70%;
+    max-width: 900px;
+}
+
+.resume-embed iframe {
+    width: 100%;
+    height: 85vh;
+    border: none;
+    border-radius: 12px;
+}
+
 /* BLUR EFFECT ANIMAION */
 
 .autoBlur{
@@ -1008,6 +1043,19 @@ header .box-icons{
 
     header ul{
         display: none;
+    }
+
+    .resume-section {
+        padding: 70px 10px 20px;
+    }
+
+    .resume-embed {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .resume-embed iframe {
+        height: 75vh;
     }
 
     header .box-icons{
