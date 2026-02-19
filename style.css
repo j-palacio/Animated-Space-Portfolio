@@ -237,7 +237,8 @@ header .box-icons{
     width: 30px;
     border: 2px solid lightgray;
     position: absolute;
-    left: 49%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 8%;
     border-radius: 50px;
     cursor: pointer;
@@ -519,6 +520,17 @@ header .box-icons{
 .tech-badge.gemini { color: #8e75f0; border-color: #8e75f0; }
 .tech-badge.postgres { color: #336791; border-color: #336791; }
 .tech-badge.gcloud { color: #4285f4; border-color: #4285f4; }
+.tech-badge.typescript { color: #3178c6; border-color: #3178c6; }
+.tech-badge.react { color: #61dafb; border-color: #61dafb; }
+.tech-badge.nextjs { color: #ffffff; border-color: #ffffff; }
+.tech-badge.swift { color: #f05138; border-color: #f05138; }
+.tech-badge.swiftui { color: #2196f3; border-color: #2196f3; }
+.tech-badge.firebase { color: #ffca28; border-color: #ffca28; }
+.tech-badge.openai { color: #10a37f; border-color: #10a37f; }
+.tech-badge.html { color: #e34f26; border-color: #e34f26; }
+.tech-badge.css { color: #1572b6; border-color: #1572b6; }
+.tech-badge.js { color: #f7df1e; border-color: #f7df1e; }
+.tech-badge.supabase { color: #3ecf8e; border-color: #3ecf8e; }
 
 .project-vidbox .hover-sign{
     position: absolute;
@@ -1014,7 +1026,13 @@ header .box-icons{
     .autoBlur{
         animation: none;
     }
-    
+
+    .fadein-left{
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
     .hero{
         flex-direction: column;
         top:0;
@@ -1055,77 +1073,111 @@ header .box-icons{
         height: 100%;
     }
 
-    .project-vidbox video{
-        width: 250px;
-        margin-left: -100px;
-    }
-
-    .project-info{
-        overflow: hidden;
-        padding-left: 0;
-        margin-left: -50px;
-    }
-
-    .project-info h1{
-        font-size: 20px;
-        max-width: 200px;
-        text-wrap: wrap;
-    }
-
-    .project-info p{
-        font-size: 10px;
-        text-wrap: wrap;
-        max-width: 200px;
-        min-width: 0;
-    }
-
-    .project-info button{
-        padding: 5px 10px;
-    }
-
     .my-project{
-        margin-bottom: 600px;
+        margin-bottom: 200px;
+        width: 90%;
+        height: auto;
     }
 
     .project-card{
         flex-direction: column;
-        margin-left: 25%;
-        gap: 30px;
+        align-items: center;
+        gap: 15px;
+        height: auto;
+        margin-bottom: 40px;
     }
-    
+
     .project-vidbox{
-        min-width: 200px;
+        min-width: unset;
+        width: 80%;
+        max-width: 300px;
+        height: 200px;
+    }
+
+    .project-vidbox video{
+        width: 100%;
+        height: 100%;
     }
 
     .project-info{
         width: 85%;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
     }
 
     .project-info h1{
-        text-wrap: nowrap;
+        font-size: 22px;
+        text-wrap: wrap;
+        max-width: 100%;
     }
 
     .project-info p{
-        max-width: 300px;
+        font-size: 13px;
+        text-wrap: wrap;
+        max-width: 100%;
+        min-width: 0;
     }
 
-    .Designer{
-        top: 15%;
-        left: 18%;
+    .project-info button{
+        padding: 8px 20px;
     }
 
-    .Designer h1{
-        margin-bottom: 0;
-        margin-top: 70px;
+    .tech-stack{
+        justify-content: center;
     }
 
-    .coder{
-        top: 50%;
-        left: 18%;
+    .skills-section{
+        margin-top: 50px;
+        padding-bottom: 80px;
+        overflow-x: hidden;
     }
 
-    .coder h1{
-        margin-bottom: 0;
+    .skills-box{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        overflow: hidden;
+    }
+
+    .skills-image{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .Designer, .coder{
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 90%;
+        max-width: 90%;
+        min-width: 0;
+        margin-bottom: 30px;
+    }
+
+    .Designer h1, .coder h1{
+        font-size: 32px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        white-space: normal;
+    }
+
+    .Designer p, .coder p{
+        text-align: left;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .slider{
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 100%;
     }
 
     .slider .list .item img{
@@ -1188,7 +1240,6 @@ header .box-icons{
 
     .scroll-down{
         bottom: 15%;
-        left: 60%;
     }
 
     .section-title {
@@ -1210,24 +1261,21 @@ header .box-icons{
     }
 
     .project-card {
-        height: 50%;
+        height: auto;
+    }
+
+    .project-vidbox{
+        max-width: 250px;
+        height: 180px;
     }
 
     .project-info p{
         margin-bottom: 15px;
+        font-size: 12px;
     }
 
-    .project-info{
-        margin-left: -80px;
-    }
-
-    .skills-box{
-        height: 120vh;
-        margin-right: 30px;
-    }
-
-    .slider{
-        bottom: 0%;
+    .Designer h1, .coder h1{
+        font-size: 28px;
     }
 
     .contact-section{
