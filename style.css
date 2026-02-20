@@ -1112,23 +1112,6 @@ header .box-icons {
     margin-top: -15%;
   }
 
-  .autoBlur {
-    animation: none;
-  }
-
-  .autoDisplay {
-    animation: none;
-    opacity: 1;
-    transform: none;
-    filter: none;
-  }
-
-  .fadein-left {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-
   .hero {
     flex-direction: column;
     top: 0;
