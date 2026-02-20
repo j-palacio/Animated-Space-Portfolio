@@ -1,203 +1,401 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animated Space Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <video class="back-vid" autoplay loop muted plays-inline src="videos/galaxy.mp4"></video>
+      <video
+        class="back-vid"
+        autoplay
+        loop
+        muted
+        plays-inline
+        src="videos/galaxy.mp4"
+      ></video>
 
+      <header data-aos="fade-down" data-aos-duration="2000">
+        <div class="left"></div>
 
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
 
-        <header data-aos="fade-down" data-aos-duration="2000">
-            <div class="left">
-            </div>
-
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-
-            <div class="box-icons">
-                <p><i class='bx bxl-youtube'></i></p>
-                <a href="https://github.com/j-palacio" target="_blank"><p><i class='bx bxl-github'></i></p></a>
-                <a href="https://www.linkedin.com/in/j-palacio/" target="_blank"><p><i class='bx bxl-linkedin-square'></i></p></a>
-            </div>
-
-            <div class="menu-icon">
-                <i class='bx bx-menu'></i>
-            </div>            
-        </header>
-        <div class="sidebar">
-            <div class="close-icon">
-                <i class='bx bx-x'></i>
-            </div>
-            
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-
-            <div class="social-sidebar">
-                <a><i class='bx bxl-youtube'></i></a>
-                <a href="https://github.com/j-palacio" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/j-palacio/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-            </div>
+        <div class="box-icons">
+          <p><i class="bx bxl-youtube"></i></p>
+          <a href="https://github.com/j-palacio" target="_blank">
+            <p><i class="bx bxl-github"></i></p>
+          </a>
+          <a href="https://www.linkedin.com/in/j-palacio/" target="_blank">
+            <p><i class="bx bxl-linkedin-square"></i></p>
+          </a>
         </div>
 
-        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
-            <video autoplay loop muted plays-inline src="videos/blackhole.mp4"></video>
+        <div class="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+      </header>
+      <div class="sidebar">
+        <div class="close-icon">
+          <i class="bx bx-x"></i>
         </div>
 
-        <section id="about" class="hero ">
-            <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
-                <div class="hero-info-title" >
-                    <i class='bx bxl-sketch'></i>
-                    AI Engineer
-                </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
 
-                <p>Full-stack AI software engineer and Computer Science student transfering to a top 25 university. I build voice-enabled AI applications, research algorithmic integrity, and develop systems that promote information trust. Previously AI Researcher at Miami-Dade College and software engineering intern at early-stage startups.</p>
+        <div class="social-sidebar">
+          <a><i class="bx bxl-youtube"></i></a>
+          <a href="https://github.com/j-palacio" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/j-palacio/" target="_blank">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+        </div>
+      </div>
 
-                <a href="mailto:jpalacio2795@gmail.com"><button><i class='bx bx-send' ></i> Contact Me</button></a>
-            </div>
-            
-            <div class="scroll-down"></div>
-        </section>
+      <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+        <video
+          autoplay
+          loop
+          muted
+          plays-inline
+          src="videos/blackhole.mp4"
+        ></video>
+      </div>
 
+      <section id="about" class="hero">
+        <div
+          class="hero-info autoBlur"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="hero-info-title">
+            <i class="bx bxl-sketch"></i>
+            AI Engineer
+          </div>
 
-        <section id="projects" class="my-project">
-            <h1 class="section-title autoDisplay">My Projects 👨‍💻</h1>
-            <div class="project-card">
-                <div class="project-vidbox autoBlur" >
-                    <video loop muted id="projectVideo1" src="videos/project1.mp4"></video>
-                    <div class="hover-sign"></div>
-                </div>
-                <div class="project-info fadein-left">
-                    <h1>Hakim <span class="gradient">AI</span></h1>
-                    <p>Voice-enabled AI medical assistant that combines conversational AI with speech recognition. Built with LangChain and Google's Gemini for natural language understanding and Google Cloud Speech services for real-time voice interaction.</p>
-                    <div class="tech-stack">
-                        <span class="tech-badge typescript">TypeScript</span>
-                        <span class="tech-badge react">React</span>
-                        <span class="tech-badge nextjs">Next.js</span>
-                        <span class="tech-badge python">Python</span>
-                        <span class="tech-badge django">Django</span>
-                        <span class="tech-badge gemini">Gemini</span>
-                        <span class="tech-badge postgres">PostgreSQL</span>
-                        <span class="tech-badge gcloud">Google Cloud</span>
-                    </div>
-                    <a href="https://hakimtheai.com" target="_blank"><button><i class='bx bx-link-external' ></i> Website</button></a>
-            </div>
-            </div>
+          <p>
+            Full-stack AI software engineer and Computer Science student
+            transfering to a top 25 university. I build voice-enabled AI
+            applications, research algorithmic integrity, and develop systems
+            that promote information trust. Previously AI Researcher at
+            Miami-Dade College and software engineering intern at early-stage
+            startups.
+          </p>
 
-            <div class="project-card">
-                <div class="project-vidbox autoBlur">
-                    <video loop muted id="projectVideo2" src="videos/project3.mp4"></video>
-                </div>
-                <div class="project-info fadein-left">
-                    <h1>Revolution <span class="gradient">Social</span></h1>
-                    <p>Twitter-inspired social media app built natively in SwiftUI with minimalist design and smooth navigation. Features tweet creation, user timelines, OAuth authentication, and a content moderation system using Google's Perspective API to detect toxicity and promote expert voices in real time.</p>
-                    <div class="tech-stack">
-                        <span class="tech-badge swift">Swift</span>
-                        <span class="tech-badge swiftui">SwiftUI</span>
-                        <span class="tech-badge supabase">Supabase</span>
-                        <span class="tech-badge postgres">PostgreSQL</span>
-                        <span class="tech-badge gcloud">Perspective API</span>
-                    </div>
-                    <a href="https://github.com/j-palacio/Revolution" target="_blank"><button><i class='bx bx-link-external' ></i> GitHub</button></a>
-                </div>
-            </div>
+          <a href="mailto:jpalacio2795@gmail.com">
+            <button>
+              <i class="bx bx-send"></i>
+              Contact Me
+            </button>
+          </a>
+        </div>
 
-            <div class="project-card">
-                <div class="project-vidbox autoBlur">
-                    <video loop muted id="projectVideo3" src="videos/project2.mp4"></video>
-                </div>
+        <div class="scroll-down"></div>
+      </section>
 
-                <div class="project-info fadein-left">
-                    <h1>Animated <span class="gradient">Space</span> Portfolio</h1>
-                    <p>Modern space-themed developer portfolio featuring animated black hole and galaxy background videos, a scrolling skills slider with devicon integration, and smooth AOS scroll animations. Built with vanilla HTML, CSS, and JavaScript with a focus on visual storytelling and responsive design across all devices.</p>
-                    <div class="tech-stack">
-                        <span class="tech-badge html">HTML</span>
-                        <span class="tech-badge css">CSS</span>
-                        <span class="tech-badge js">JavaScript</span>
-                    </div>
-                    <a href="https://github.com/j-palacio/Animated-Space-Portfolio" target="_blank"><button><i class='bx bx-link-external' ></i> GitHub</button></a>
-                </div>
-            </div>
-        </section>
-
-        
-        <section id="skills" class="skills-section">
-            <h1 class="section-title autoDisplay">
-                My Skills 💪
+      <section id="projects" class="my-project">
+        <h1 class="section-title autoDisplay">My Projects 👨‍💻</h1>
+        <div class="project-card">
+          <div class="project-vidbox autoBlur">
+            <video
+              loop
+              muted
+              id="projectVideo1"
+              src="videos/project1.mp4"
+            ></video>
+            <div class="hover-sign"></div>
+          </div>
+          <div class="project-info fadein-left">
+            <h1>
+              Hakim
+              <span class="gradient">AI</span>
             </h1>
-            <div class="skills-box autoDisplay">
-                <img class="skills-image" src="images/digital brain (2).png" alt="">
-                <div class="Designer">
-                    <h1 class="gradient">Engineer <i class='bx bx-bot'></i></h1>
-                    <p>I build intelligent systems using LangChain, vector databases, and large language models. My focus is creating voice-enabled AI applications and conversational agents that solve real-world problems.</p>
-                </div>
-
-                <div class="coder">
-                    <h1 class="gradient">Creator <i class='bx bxl-youtube'></i></h1>
-                    <p>I create YouTube videos about programming, software engineering, tech news, and the latest in AI. From tutorials to takes on current events, I break down complex topics for developers and tech enthusiasts.</p>
-                </div>
-
-                <div class="slider" reverse="true" style="
-                --width: 100px;
-                --height: 100px;
-                --quantity: 18;
-                ">
-                    <div class="list">
-                        <!-- Languages -->
-                        <div class="item" style="--position: 1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
-                        <div class="item" style="--position: 2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="Go"></div>
-                        <div class="item" style="--position: 3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"></div>
-                        <div class="item" style="--position: 4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
-                        <div class="item" style="--position: 5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"></div>
-                        <div class="item" style="--position: 6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift"></div>
-                        <!-- Frameworks -->
-                        <div class="item" style="--position: 7"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
-                        <div class="item" style="--position: 8"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"></div>
-                        <div class="item" style="--position: 9"><img src="https://cdn.simpleicons.org/flask/white" alt="Flask"></div>
-                        <div class="item" style="--position: 10"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"></div>
-                        <div class="item" style="--position: 11"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL"></div>
-                        <!-- AI/ML -->
-                        <div class="item" style="--position: 12"><img src="https://cdn.simpleicons.org/langchain/white" alt="LangChain"></div>
-                        <!-- Cloud/DevOps -->
-                        <div class="item" style="--position: 13"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS"></div>
-                        <div class="item" style="--position: 14"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP"></div>
-                        <div class="item" style="--position: 15"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></div>
-                        <div class="item" style="--position: 16"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></div>
-                        <!-- Databases -->
-                        <div class="item" style="--position: 17"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"></div>
-                        <div class="item" style="--position: 18"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"></div>
-                    </div>
-                </div>
+            <p>
+              Voice-enabled AI assistant that combines conversational AI with
+              speech recognition. Built with LangChain and Google's Gemini for
+              natural language understanding and Google Cloud Speech services
+              for real-time voice interaction.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge typescript">TypeScript</span>
+              <span class="tech-badge react">React</span>
+              <span class="tech-badge nextjs">Next.js</span>
+              <span class="tech-badge python">Python</span>
+              <span class="tech-badge django">Django</span>
+              <span class="tech-badge gemini">Gemini</span>
+              <span class="tech-badge postgres">PostgreSQL</span>
+              <span class="tech-badge gcloud">Google Cloud</span>
             </div>
-        </section>
+            <a href="https://hakimtheai.com" target="_blank">
+              <button>
+                <i class="bx bx-link-external"></i>
+                Website
+              </button>
+            </a>
+          </div>
+        </div>
 
-        <section id="resume" class="resume-section">
-            <div class="resume-embed autoBlur">
-                <iframe src="resume/Resume.pdf" title="Resume"></iframe>
+        <div class="project-card">
+          <div class="project-vidbox autoBlur">
+            <video
+              loop
+              muted
+              id="projectVideo2"
+              src="videos/project3.mp4"
+            ></video>
+          </div>
+          <div class="project-info fadein-left">
+            <h1>
+              Revolution
+              <span class="gradient">Social</span>
+            </h1>
+            <p>
+              Twitter-inspired social media app built natively in SwiftUI with
+              minimalist design and smooth navigation. Features tweet creation,
+              user timelines, OAuth authentication, and a content moderation
+              system using Google's Perspective API to detect toxicity and
+              promote expert voices in real time.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge swift">Swift</span>
+              <span class="tech-badge swiftui">SwiftUI</span>
+              <span class="tech-badge supabase">Supabase</span>
+              <span class="tech-badge postgres">PostgreSQL</span>
+              <span class="tech-badge gcloud">Perspective API</span>
             </div>
-        </section>
+            <a href="https://github.com/j-palacio/Revolution" target="_blank">
+              <button>
+                <i class="bx bx-link-external"></i>
+                GitHub
+              </button>
+            </a>
+          </div>
+        </div>
 
+        <div class="project-card">
+          <div class="project-vidbox autoBlur">
+            <video
+              loop
+              muted
+              id="projectVideo3"
+              src="videos/project2.mp4"
+            ></video>
+          </div>
 
+          <div class="project-info fadein-left">
+            <h1>
+              Animated
+              <span class="gradient">Space</span>
+              Portfolio
+            </h1>
+            <p>
+              Modern space-themed developer portfolio featuring animated black
+              hole and galaxy background videos, a scrolling skills slider with
+              devicon integration, and smooth AOS scroll animations. Built with
+              vanilla HTML, CSS, and JavaScript with a focus on visual
+              storytelling and responsive design across all devices.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge html">HTML</span>
+              <span class="tech-badge css">CSS</span>
+              <span class="tech-badge js">JavaScript</span>
+            </div>
+            <a
+              href="https://github.com/j-palacio/Animated-Space-Portfolio"
+              target="_blank"
+            >
+              <button>
+                <i class="bx bx-link-external"></i>
+                GitHub
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <h1 class="section-title autoDisplay">Skills 💪</h1>
+        <div class="skills-box autoDisplay">
+          <img class="skills-image" src="images/digital brain (2).png" alt="" />
+          <div class="Designer">
+            <h1 class="gradient">
+              Engineer
+              <i class="bx bx-bot"></i>
+            </h1>
+            <p>
+              I build intelligent systems using LangChain, vector databases, and
+              large language models. My focus is creating voice-enabled AI
+              applications and conversational agents that solve real-world
+              problems.
+            </p>
+          </div>
+
+          <div class="coder">
+            <h1 class="gradient">
+              Creator
+              <i class="bx bxl-youtube"></i>
+            </h1>
+            <p>
+              I create YouTube videos about programming, software engineering,
+              tech news, and the latest in AI. From tutorials to takes on
+              current events, I break down complex topics for developers and
+              tech enthusiasts.
+            </p>
+          </div>
+
+          <div
+            class="slider"
+            reverse="true"
+            style="--width: 100px; --height: 100px; --quantity: 18"
+          >
+            <div class="list">
+              <!-- Languages -->
+              <div class="item" style="--position: 1">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                />
+              </div>
+              <div class="item" style="--position: 2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"
+                  alt="Go"
+                />
+              </div>
+              <div class="item" style="--position: 3">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                  alt="Java"
+                />
+              </div>
+              <div class="item" style="--position: 4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+              </div>
+              <div class="item" style="--position: 5">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"
+                />
+              </div>
+              <div class="item" style="--position: 6">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
+                  alt="Swift"
+                />
+              </div>
+              <!-- Frameworks -->
+              <div class="item" style="--position: 7">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                />
+              </div>
+              <div class="item" style="--position: 8">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                  alt="Django"
+                />
+              </div>
+              <div class="item" style="--position: 9">
+                <img
+                  src="https://cdn.simpleicons.org/flask/white"
+                  alt="Flask"
+                />
+              </div>
+              <div class="item" style="--position: 10">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+                  alt="FastAPI"
+                />
+              </div>
+              <div class="item" style="--position: 11">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+                  alt="GraphQL"
+                />
+              </div>
+              <!-- AI/ML -->
+              <div class="item" style="--position: 12">
+                <img
+                  src="https://cdn.simpleicons.org/langchain/white"
+                  alt="LangChain"
+                />
+              </div>
+              <!-- Cloud/DevOps -->
+              <div class="item" style="--position: 13">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                  alt="AWS"
+                />
+              </div>
+              <div class="item" style="--position: 14">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+                  alt="GCP"
+                />
+              </div>
+              <div class="item" style="--position: 15">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                  alt="Docker"
+                />
+              </div>
+              <div class="item" style="--position: 16">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                  alt="Kubernetes"
+                />
+              </div>
+              <!-- Databases -->
+              <div class="item" style="--position: 17">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                />
+              </div>
+              <div class="item" style="--position: 18">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="resume-section">
+        <h1 class="section-title autoDisplay">Resume 📄</h1>
+        <div class="resume-embed autoBlur">
+          <iframe src="resume/Resume.pdf" title="Resume"></iframe>
+        </div>
+      </section>
     </div>
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script >
+    <script>
       AOS.init();
     </script>
-</body>
+  </body>
 </html>
